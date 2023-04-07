@@ -4,7 +4,6 @@ import { getAuth } from "firebase/auth";
 import Vue from 'vue'
 import App from './App'
 // Initialize Firebase
-
 const firebaseConfig = {
   apiKey: "AIzaSyA2w4LSsyyPrRpKnSbPhVV507gDyw0cts0",
   authDomain: "ryuya-yamanaka.firebaseapp.com",
@@ -24,7 +23,7 @@ new Vue({
   conponents: {
     App
   },
-  template: '<App/>'
+  render: h => h(App)
 })
 
 
